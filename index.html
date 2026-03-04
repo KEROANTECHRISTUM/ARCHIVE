@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KAC · archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@400&family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <script>
 const AUTHORS = {
@@ -826,7 +826,71 @@ body::before {
   border-top: 1px solid var(--border2);
 }
 
-/* ── RESPONSIVE ── */
+/* ── PORTAL LINKS ── */
+.portal-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.6rem 2rem;
+  border-bottom: 1px solid var(--border2);
+  background: rgba(6,8,16,0.8);
+}
+
+.portal-link {
+  display: block;
+  text-decoration: none;
+  background: #07060a;
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 0.35rem 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portal-link.map {
+  border-top: 1px solid #3a5080;
+}
+
+.portal-link.map:hover {
+  border-color: #3a5080;
+  box-shadow: 0 0 12px rgba(58,80,128,0.12);
+}
+
+.portal-link.henosis {
+  border-top: 1px solid #8b3020;
+}
+
+.portal-link.henosis:hover {
+  border-color: #8b3020;
+  box-shadow: 0 0 12px rgba(139,48,32,0.12);
+}
+
+.portal-link .portal-one {
+  font-family: 'Cinzel', serif;
+  font-size: 0.35rem;
+  letter-spacing: 0.3em;
+  color: #6a7a90;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+.portal-link .portal-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #e8f0ff;
+  display: block;
+}
+
+.portal-link.henosis .portal-title {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  color: #d6ccb8;
+}
 @media (max-width: 600px) {
   .site-header { padding: 0 1rem; }
   .members-bar { padding: 0.6rem 1rem; gap: 0.3rem; }
@@ -859,6 +923,18 @@ body::before {
   <!-- filled by JS -->
 </div>
 
+<div class="portal-links">
+  <a href="https://keroantechristum.github.io/MAP/" class="portal-link map">
+    <span class="portal-one">one</span>
+    <span class="portal-title">SUBSTANCE</span>
+  </a>
+  <a href="https://keroantechristum.github.io/HENOSIS/" class="portal-link henosis">
+    <span class="portal-one" style="color: #6a6a6a;">☧</span>
+    <span class="portal-title">HENOSIS</span>
+    <span style="font-family:'Share Tech Mono',monospace;font-size:0.35rem;letter-spacing:0.15em;color:rgba(232,224,208,0.25);display:block;margin-top:0.25rem;">KATABASIS · TRAUMATURGY · PSYCHOPOMP</span>
+  </a>
+</div>
+
 <div class="container">
 
   <!-- LIST VIEW -->
@@ -886,6 +962,7 @@ body::before {
   </div>
 
 </div>
+
 
 <script>
 // ── BUILD MEMBERS BAR ──
