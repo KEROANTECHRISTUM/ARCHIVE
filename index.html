@@ -1095,6 +1095,44 @@ body::before {
   .author-pip { margin-top: 0; }
   .post-body { padding: 1.2rem 0; }
 }
+
+.parables-section {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.parables-header {
+  font-family: var(--font-head);
+  font-size: 0.6rem;
+  letter-spacing: 0.35em;
+  color: var(--dim);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.parable-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.parable-link {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid rgba(232,224,208,0.15);
+  padding-bottom: 1px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.parable-link:hover {
+  color: var(--gold);
+  border-color: rgba(232,200,74,0.4);
+}
 </style>
 </head>
 <body>
@@ -1128,6 +1166,14 @@ body::before {
     <ul class="thread-list" id="thread-list">
       <!-- filled by JS -->
     </ul>
+
+    <div class="parables-section">
+      <div class="parables-header">the parables</div>
+      <div class="parable-entry">
+        <a href="https://keroantechristum.github.io/ARCHIVE/kero-and-the-very-old-mistake.pdf" target="_blank" class="parable-link">KERO and the very old mistake</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- THREAD DETAIL VIEW -->
