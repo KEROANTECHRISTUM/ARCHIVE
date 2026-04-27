@@ -1105,7 +1105,7 @@ body::before {
 
 .parables-header {
   font-family: var(--font-head);
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   letter-spacing: 0.35em;
   color: var(--dim);
   text-transform: uppercase;
@@ -1120,7 +1120,7 @@ body::before {
 
 .parable-link {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: var(--text);
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -1185,9 +1185,6 @@ body::before {
 
   <!-- LIST VIEW -->
   <div id="view-list">
-    <div class="list-header">
-      <h1>all threads</h1>
-    </div>
     <div class="parables-section">
       <div class="parables-header">the parables</div>
       <div class="parable-entry">
@@ -1198,6 +1195,9 @@ body::before {
       </div>
     </div>
 
+    <div class="list-header">
+      <h1>other threads</h1>
+    </div>
     <ul class="thread-list" id="thread-list">
       <!-- filled by JS -->
     </ul>
@@ -1207,7 +1207,7 @@ body::before {
   <!-- THREAD DETAIL VIEW -->
   <div id="view-thread">
     <div class="thread-nav">
-      <button class="back-link" onclick="showList()">← all threads</button>
+      <button class="back-link" onclick="showList()">← other threads</button>
     </div>
     <div class="thread-detail-header">
       <div class="thread-detail-title" id="detail-title"></div>
