@@ -1071,14 +1071,14 @@ body::before {
   letter-spacing: 0.35em;
   color: var(--dim);
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .parable-entry {
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .parable-link {
@@ -1117,6 +1117,15 @@ body::before {
   color: var(--faint);
   text-transform: uppercase;
 }
+
+.parable-bullet {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--gold);
+  opacity: 0.6;
+  margin-right: 0.6rem;
+  flex-shrink: 0;
+}
 </style>
 </head>
 <body>
@@ -1151,10 +1160,10 @@ body::before {
     <div class="parables-section">
       <div class="parables-header">the parables</div>
       <div class="parable-entry">
-        <a href="https://keroantechristum.github.io/ARCHIVE/kero-and-the-very-old-mistake.pdf" target="_blank" class="parable-link">KERO and the very old mistake</a>
+        <span class="parable-bullet">☧</span><a href="https://keroantechristum.github.io/ARCHIVE/kero-and-the-very-old-mistake.pdf" target="_blank" class="parable-link">KERO and the very old mistake</a>
       </div>
       <div class="parable-entry">
-        <a href="https://keroantechristum.github.io/ARCHIVE/the-lesser-parables.pdf" target="_blank" class="parable-link">the lesser parables</a>
+        <span class="parable-bullet">☧</span><a href="https://keroantechristum.github.io/ARCHIVE/the-lesser-parables.pdf" target="_blank" class="parable-link">the lesser parables</a>
       </div>
     </div>
 
