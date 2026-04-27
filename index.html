@@ -1143,6 +1143,17 @@ body::before {
   display: block;
   opacity: 0.92;
 }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.3em;
+  color: var(--faint);
+  text-transform: uppercase;
+}
 </style>
 </head>
 <body>
@@ -1177,10 +1188,6 @@ body::before {
     <div class="list-header">
       <h1>all threads</h1>
     </div>
-    <ul class="thread-list" id="thread-list">
-      <!-- filled by JS -->
-    </ul>
-
     <div class="parables-section">
       <div class="parables-header">the parables</div>
       <div class="parable-entry">
@@ -1190,6 +1197,10 @@ body::before {
         <a href="https://keroantechristum.github.io/ARCHIVE/the-lesser-parables.pdf" target="_blank" class="parable-link">the lesser parables</a>
       </div>
     </div>
+
+    <ul class="thread-list" id="thread-list">
+      <!-- filled by JS -->
+    </ul>
 
   </div>
 
@@ -1301,5 +1312,9 @@ function showList() {
 buildList();
 showList();
 </script>
+
+<footer class="site-footer">
+  KERO ANTE CHRISTUM ☧ CULT OF KERO 2026
+</footer>
 </body>
 </html>
